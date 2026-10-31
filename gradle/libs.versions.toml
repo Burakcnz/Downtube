@@ -1,0 +1,31 @@
+[versions]
+agp = "8.13.2"
+kotlin = "2.4.21"
+composeBom = "2025.10.01"
+activity = "1.11.0"
+work = "2.10.5"
+ytdl = "0.18.1"
+newpipe = "v0.26.5"
+okhttp = "4.12.0"
+coil = "2.7.0"
+desugar = "2.1.5"
+
+[libraries]
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
+work-runtime = { group = "androidx.work", name = "work-runtime", version.ref = "work" }
+ytdl-library = { group = "io.github.junkfood02.youtubedl-android", name = "library", version.ref = "ytdl" }
+ytdl-ffmpeg = { group = "io.github.junkfood02.youtubedl-android", name = "ffmpeg", version.ref = "ytdl" }
+ytdl-aria2c = { group = "io.github.junkfood02.youtubedl-android", name = "aria2c", version.ref = "ytdl" }
+newpipe = { group = "com.github.TeamNewPipe", name = "NewPipeExtractor", version.ref = "newpipe" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+desugar = { group = "com.android.tools", name = "desugar_jdk_libs_nio", version.ref = "desugar" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

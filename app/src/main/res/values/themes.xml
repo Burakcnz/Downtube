@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DownTube" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/brand_dark</item>
+        <item name="android:navigationBarColor">@color/brand_dark</item>
+        <item name="android:windowBackground">@color/brand_dark</item>
+    </style>
+
+    <!-- Share entry point: no window chrome, the bottom sheet draws over the calling app -->
+    <style name="Theme.DownTube.Transparent" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
